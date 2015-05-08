@@ -1,14 +1,42 @@
 <ion-view view-title="Things to do">
-<ion-content class="padding" ng-controller="GalleryController" ng-init="loadImages()">
-    <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
-        <div class="col col-32" ng-if="$index < images.length">
-            <img ng-src="{{images[$index].src}}" width="100%" />
+<ion-content class="tausta">
+    <div class="row">
+        <div class="col card kortti">
+            <div class="item item-image">
+                <img src="http://www.everbluetraining.com/sites/default/files/u47558/commercial-buildings.jpg" />
+                <h2 class="padding kuvateksti">Tämä on kuva</h2>
+            </div>
         </div>
-        <div class="col col-32" ng-if="$index + 1 < images.length">
-            <img ng-src="{{images[$index + 1].src}}" width="100%" />
+        <div class="col card kortti ok">
+            <div class="item item-image">
+                <img src="http://www.britishairways.com/cms/global/assets/images/content/760x350_beach_Pod-3.jpg" />
+            </div>
         </div>
-        <div class="col col-32" ng-if="$index + 2 < images.length">
-            <img ng-src="{{images[$index + 2].src}}" width="100%" />
+    </div>
+    <div class="row">
+        <div class="col col-50 card kortti">
+            <div class="item item-image">
+                <img src="http://www.everbluetraining.com/sites/default/files/u47558/commercial-buildings.jpg" />
+                <h2 class="padding kuvateksti">Tämä on kuva</h2>
+            </div>
+        </div>
+        <div class="col col-48 card kortti ok">
+            <div class="item item-image">
+                <img src="http://www.britishairways.com/cms/global/assets/images/content/760x350_beach_Pod-3.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-50 card kortti">
+            <div class="item item-image">
+                <img src="http://www.everbluetraining.com/sites/default/files/u47558/commercial-buildings.jpg" />
+                <h2 class="padding kuvateksti">Tämä on kuva</h2>
+            </div>
+        </div>
+        <div class="col col-48 card kortti ok">
+            <div class="item item-image">
+                <img src="http://www.everbluetraining.com/sites/default/files/u47558/commercial-buildings.jpg" />
+            </div>
         </div>
     </div>
 </ion-content>

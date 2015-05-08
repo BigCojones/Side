@@ -1,15 +1,18 @@
-/* Empty. Add your own CSS if you like */
+.tausta {
+	background-color: #e0e0e0;
+}
 .card {
-	margin-top:10px;
-	margin-bottom:10px;
+	margin-top:8px;
+	margin-bottom:5px;
+}
+
+.things {
+	margin-top: 15px;
+	border-top:0.75em solid #4dd0e1;
 }
 
 .people {
 	border-top:0.75em solid #4fc3f7;
-}
-
-.things {
-	border-top:0.75em solid #4dd0e1;
 }
 
 .places{
@@ -17,8 +20,43 @@
 }
 
 .otsikko {
-	padding-top: 12px;
-	margin-left: 10px;
-	font-size: 20px;
+	padding-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 14px;
+	font-size: 1.1em;
 	font-family: "Roboto";
+}
+
+.row {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.kaposempi {
+	padding: 2px !important;
+}
+
+.muki {
+	background-color: #607d8b;
+	color: white;
+}
+
+.kortti {
+	padding-right:0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin-right:0px;
+	margin-left: 0px;
+	padding-top: 0px;
+}
+
+.kuvateksti {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+.ok {
+	margin-left: 10px;
+	margin-right: 10px;
 }
