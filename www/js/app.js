@@ -14,9 +14,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if (window.StatusBar) {
+      if (ionic.Platform.isAndroid()) {
+        StatusBar.backgroundColorByHexString("#608628");
+      } else {
+        StatusBar.styleLightContent();
+      }
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
     }
+
+    $timeout(function() {
+      navigator.splashscreen.hide();
+    }, 500);
   });
 })
 

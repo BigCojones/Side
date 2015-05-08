@@ -1,1 +1,24 @@
 /* Empty. Add your own CSS if you like */
+.card {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.people {
+	border-top:0.75em solid #4fc3f7;
+}
+
+.things {
+	border-top:0.75em solid #4dd0e1;
+}
+
+.places{
+	border-top:0.75em solid #4db6ac;
+}
+
+.otsikko {
+	padding-top: 12px;
+	margin-left: 10px;
+	font-size: 20px;
+	font-family: "Roboto";
+}

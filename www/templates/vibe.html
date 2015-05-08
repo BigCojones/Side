@@ -1,11 +1,30 @@
 <ion-view view-title="Vibe">
   <ion-content class="padding">
-    <div>
-      <div><button class="button button-calm button-clear" ui-sref="app.things">
-      Things to do</button></div>
+    <div class="card things" ui-sref="app.things">
+      <h1 class="otsikko">Things to do</h1>
+      <div ng-controller="VibeController" ng-init="loadImages()">
+      
+        <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
+          <div class="col col-32">
+              <img class="item item-thumbnail" src="http://ionicframework.com/img/ionic-logo-blog.png" width="40%" />
+          </div>
+          <!--<div class="col col-32" ng-if="$index < images.length">
+            <img class="item item-thumbnail" ng-src="{{images[$index].src}}" width="80%" />
+          </div>-->
+          <div class="col col-32" ng-if="$index + 1 < images.length">
+              <img class="item item-avatar" ng-src="{{images[$index + 1].src}}" width="80%" />
+          </div>
+          <div class="col col-32" ng-if="$index + 2 < images.length">
+              <img class="item item-avatar" ng-src="{{images[$index + 2].src}}" width="80%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card people">
+      <h1 class="otsikko">People</h1>
       <div ng-controller="VibeController" ng-init="loadImages()">
         <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
-          <div class="col col-32" ng-if="$index < images.length">
+          <div class="col col-32 item item-thumbnail" ng-if="$index < images.length">
               <img ng-src="{{images[$index].src}}" width="100%" />
           </div>
           <div class="col col-32" ng-if="$index + 1 < images.length">
@@ -17,25 +36,8 @@
         </div>
       </div>
     </div>
-    <div>
-      <div><button class="button button-calm button-clear" ui-sref="app.people">
-      People</button></div>
-      <div ng-controller="VibeController" ng-init="loadImages()">
-        <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
-          <div class="col col-32" ng-if="$index < images.length">
-              <img ng-src="{{images[$index].src}}" width="100%" />
-          </div>
-          <div class="col col-32" ng-if="$index + 1 < images.length">
-              <img ng-src="{{images[$index + 1].src}}" width="100%" />
-          </div>
-          <div class="col col-32" ng-if="$index + 2 < images.length">
-              <img ng-src="{{images[$index + 2].src}}" width="100%" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div><button class="button button-calm button-clear" ui-sref="app.places">Places</button></div>
+    <div class="card places">
+      <h1 class="otsikko">Places</h1>
       <div ng-controller="VibeController" ng-init="loadImages()">
         <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
           <div class="col col-32" ng-if="$index < images.length">
